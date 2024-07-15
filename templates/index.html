@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">YouTube MP4 Downloader</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Download Video</h5>
+                <form action="/download_video" method="post">
+                    <div class="form-group">
+                        <label for="url">Video URL:</label>
+                        <input type="text" class="form-control" id="url" name="url" placeholder="Enter YouTube video URL" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Download Video</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Download Playlist</h5>
+                <form action="/download_playlist" method="post">
+                    <div class="form-group">
+                        <label for="playlist_url">Playlist URL:</label>
+                        <input type="text" class="form-control" id="playlist_url" name="url" placeholder="Enter YouTube playlist URL" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Download Playlist</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
